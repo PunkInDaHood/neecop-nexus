@@ -152,12 +152,18 @@ const InitiativeDetail = () => {
                             <div className="p-8 border border-border rounded-2xl">
                                 <p className="text-xs font-semibold text-secondary uppercase tracking-widest mb-4">Related News</p>
                                 <div className="space-y-4">
-                                    <p className="text-sm font-medium hover:text-secondary cursor-pointer transition-colors">
-                                        Ministry of Power review of NCR Energy baseline...
-                                    </p>
-                                    <p className="text-sm font-medium hover:text-secondary cursor-pointer transition-colors">
-                                        Kirori Mal College Academic Report on Delhi Policy...
-                                    </p>
+                                    {[
+                                        { title: "Ministry of Power review of NCR Energy baseline...", path: "/initiatives" },
+                                        { title: "Kirori Mal College Academic Report on Delhi Policy...", path: "/initiatives" }
+                                    ].map((news, idx) => (
+                                        <Link
+                                            key={idx}
+                                            to={news.path}
+                                            className="block text-sm font-medium hover:text-secondary cursor-pointer transition-colors"
+                                        >
+                                            {news.title}
+                                        </Link>
+                                    ))}
                                 </div>
                             </div>
                         </div>
