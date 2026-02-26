@@ -166,7 +166,7 @@ const Index = () => {
               <h3 className="font-heading font-bold text-primary mb-3">🔹 {news.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">{news.highlight}</p>
               <Button variant="link" size="sm" className="p-0 text-secondary" asChild>
-                <Link to="/news">Read More <ArrowRight className="h-4 w-4" /></Link>
+                <Link to="/initiatives">Read More <ArrowRight className="h-4 w-4" /></Link>
               </Button>
             </div>
           ))}

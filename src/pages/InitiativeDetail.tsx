@@ -153,8 +153,8 @@ const InitiativeDetail = () => {
                                 <p className="text-xs font-semibold text-secondary uppercase tracking-widest mb-4">Related News</p>
                                 <div className="space-y-4">
                                     {[
-                                        { title: "Ministry of Power review of NCR Energy baseline...", path: "/news" },
-                                        { title: "Kirori Mal College Academic Report on Delhi Policy...", path: "/news" }
+                                        { title: "Ministry of Power review of NCR Energy baseline...", path: "/initiatives" },
+                                        { title: "Kirori Mal College Academic Report on Delhi Policy...", path: "/initiatives" }
                                     ].map((news, idx) => (
                                         <Link
                                             key={idx}
