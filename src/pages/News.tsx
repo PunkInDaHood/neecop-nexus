@@ -5,40 +5,31 @@ import { ArrowLeft, Newspaper, Calendar, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 
 const scoopData: Record<string, any> = {
-    "12": {
+    "india-europe-strategic-agenda": {
         date: "Feb 2026",
-        title: "Leadership Shifts & Disruption",
+        title: "India-Europe Strategic Agenda: Trade & Technology Council",
         items: [
-            { subtitle: "Tata Sons in Transition", text: "Vice-chairman Vijay Singh steps down as the group navigates an RBI-mandated IPO deadline." },
-            { subtitle: "Rupee Pressures", text: "Foreign outflows and tariff tensions push the currency closer to its all-time low." },
-            { subtitle: "AI Disruption", text: "Replit’s billion-dollar leap highlights the accelerating disruption in tech ecosystems." }
-        ]
-    },
-    "11": {
-        date: "Jan 2026",
-        title: "Transparency & AI Infrastructure",
-        items: [
-            { subtitle: "SEBI Pushes Transparency", text: "New rules mandate AIFs to upload NAVs within 15 days, strengthening investor trust." },
-            { subtitle: "AI Infrastructure Boom", text: "Equinix launches a ₹574 crore AI-ready data center in Chennai." },
-            { subtitle: "Urban Company IPO", text: "Shares debut with a 57% pop on Dalal Street, signaling strong market interest." }
+            { subtitle: "Strategic Agenda Pillar", text: "New cooperation roadmap focused on global connectivity, emerging technologies, and green hydrogen partnerships under the 'Strategic EU-India Agenda'." },
+            { subtitle: "FTA Negotiations", text: "Joint commitment to conclude the India-EU Free Trade Agreement (FTA) by the end of 2025, following re-launched talks in 2022." },
+            { subtitle: "Clean Energy Partnership", text: "Extended agenda for 2025-2028 focusing on offshore wind, battery recycling, smart grid connectivity, and the India-EU Green Hydrogen Task Force." }
         ]
     },
     "energy-baseline": {
-        date: "Feb 2026",
-        title: "Ministry of Power Review: NCR Energy Baseline",
+        date: "Aug 2024 - Feb 2026",
+        title: "NCR Energy Baseline: Infrastructure Modernization",
         items: [
-            { subtitle: "35 District Coverage", text: "Evaluating domestic power supply across Delhi, Haryana, UP, and Rajasthan." },
-            { subtitle: "Data-Driven Policy", text: "Launching a significant leap toward evidence-based energy infrastructure planning." },
-            { subtitle: "Ministerial Launch", text: "Initiative officially unveiled by Shri Manohar Lal Khattar, Hon'ble Minister of Power." }
+            { subtitle: "₹3,600 Crore Investment", text: "Ministry of Power approves substantial funding for Gas Insulated Substations, network automation, and underground cabling in NCR clusters like Gurugram and Faridabad." },
+            { subtitle: "Reliability Assessments", text: "Assessments show rural power availability has reached 20.6 hours and urban areas 23.8 hours, with Delhi and Haryana DISCOMs leading in reliability." },
+            { subtitle: "Smart Meter Transition", text: "Rapid adoption across 35 districts facilitating real-time monitoring through the National Power Portal and the Revamped Distribution Sector Scheme (RDSS)." }
         ]
     },
     "startup-policy": {
         date: "Sept 2025",
-        title: "Round Table on Delhi Startup Policy 2025",
+        title: "Draft Delhi Startup Policy 2025: Co-creating Innovation",
         items: [
-            { subtitle: "Financial Incentives", text: "Consultations on ₹200Cr VC fund and founder stipends for marginalized groups." },
-            { subtitle: "Infrastructure Support", text: "Dialogue on incubator benchmarks and lab facilities for hardware startups." },
-            { subtitle: "Policy Governance", text: "Establishing implementation monitoring to ensure transparent benefit disbursement." }
+            { subtitle: "₹200 Crore VC Fund", text: "A strategic venture capital fund designed to provide early-stage financial backing and nurture at least 5,000 startups by 2035." },
+            { subtitle: "Founder Incentives", text: "Policy highlights include 100% reimbursement on lease rentals (up to ₹10 lakh) and patent filing reimbursements (up to ₹3 lakh for international)." },
+            { subtitle: "Delhi Incubation Hub", text: "Establishing a cornerstone facility for virtual incubation services, mentorship, and industry networking across 18 strategic focus areas." }
         ]
     }
 };
@@ -49,7 +40,7 @@ const News = () => {
 
     if (!scoop) {
         return (
-            <div className="min-h-screen flex items-center justify-center p-4">
+            <div className="min-h-screen flex items-center justify-center p-4 text-foreground">
                 <div className="text-center">
                     <h1 className="text-2xl font-bold mb-4">News Edition Not Found</h1>
                     <Button asChild><Link to="/">Back Home</Link></Button>
@@ -102,13 +93,13 @@ const News = () => {
 
                     <div className="mt-16 p-8 bg-muted rounded-2xl border border-border text-center">
                         <Newspaper className="h-10 w-10 text-secondary mx-auto mb-4" />
-                        <h3 className="text-xl font-heading font-bold mb-2">Want more insights?</h3>
+                        <h3 className="text-xl font-heading font-bold mb-2">Detailed Reports</h3>
                         <p className="text-muted-foreground mb-6">
-                            Follow Neecop on LinkedIn for real-time updates on India's energy and policy landscape.
+                            Our research is backed by data from the Ministry of Power, National Power Portal, and Round Table consultations.
                         </p>
                         <Button variant="outline" className="gap-2" asChild>
                             <a href="https://www.linkedin.com/company/neecop" target="_blank" rel="noopener noreferrer">
-                                Follow us on LinkedIn <ExternalLink className="h-4 w-4" />
+                                Follow Updates <ExternalLink className="h-4 w-4" />
                             </a>
                         </Button>
                     </div>
