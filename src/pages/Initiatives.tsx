@@ -1,17 +1,22 @@
 import SectionWrapper from "@/components/SectionWrapper";
-import { LayoutDashboard, Landmark, Newspaper, ArrowRight, Zap } from "lucide-react";
+import { LayoutDashboard, Landmark, Newspaper, ArrowRight, Zap, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const items = [
   {
     icon: Zap,
     title: "NCR Energy Research Initiative",
-    desc: "A visionary research program 'Evaluating Domestic Power Supply in the National Capital Region' launched by the Hon'ble Minister of Power, Shri Manohar Lal Khattar. In collaboration with Kirori Mal College, we're mapping the roadmap for India's energy future through data-driven policy insights on smart meters and decentralized renewable energy.",
+    desc: "A joint research program with Kirori Mal College, surveying 100+ villages across NCR, Haryana, UP, and Rajasthan. We are mapping power usage patterns and the impact of smart meters, decentralized renewables, and battery storage systems on rural energy stability.",
   },
   {
     icon: Landmark,
     title: "Draft Delhi Startup Policy 2025",
-    desc: "Neecop, in collaboration with Kirori Mal College, University of Delhi, convened high-level Round Table Conferences to co-create the future of Delhi's startup ecosystem. We bring together founders, investors, and policy experts to build a robust, inclusive innovation hub.",
+    desc: "Facilitating high-level stakeholder research to propose a ₹200-crore Startup VC Fund, founder stipends (₹30k/50k), and 100% patent reimbursements. Our goal is to nurture 5,000+ startups in AI, Green Energy, and Drones by 2035.",
+  },
+  {
+    icon: Globe,
+    title: "India Europe Economic Policy Dialogue",
+    desc: "A strategic research platform bridging academic insights from Kirori Mal College with international policy frameworks. We focus on enhancing bilateral trade foundations, green energy cooperation, and technological research in AI and Semiconductors.",
   },
 ];
 

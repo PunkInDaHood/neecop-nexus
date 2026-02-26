@@ -9,7 +9,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-4">About Neecop</h1>
           <p className="text-primary-foreground/70 max-w-2xl text-lg">
-            We are dedicated to shaping India's future through data-driven research and high-impact policy engagement.
+            In collaboration with Kirori Mal College (University of Delhi), we are shaping India's future through rigorous energy research and inclusive policy engagement.
           </p>
         </div>
       </section>
@@ -18,10 +18,10 @@ const About = () => {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-heading font-bold text-foreground mb-6">Who We Are</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Neecop is a research-driven organization based in New Delhi, India. We operate at the intersection of energy policy and innovation, providing data-driven insights to steer India's sustainable development.
+            Neecop is a research-driven organization based in New Delhi. Through our flagship NCR Energy Research Initiative, we analyze household power usage patterns across 100+ villages to steer India's sustainable development.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            Founded with the vision of bridging the gap between research and policy, Neecop brings together researchers, industry experts, and policymakers to build a robust, science-backed roadmap for India's economic and environmental future.
+            Our work focuses on smart meter effectiveness, decentralized renewable energy, and grid stabilization. By bridging the gap between academic research and government policy, we provide the data needed for evidence-based economic and environmental growth.
           </p>
         </div>
       </SectionWrapper>

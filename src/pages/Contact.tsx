@@ -47,10 +47,10 @@ const Contact = () => {
                   <SelectValue placeholder="Select your role" />
                 </SelectTrigger>
                 <SelectContent>
+                  <SelectItem value="researcher">Researcher / Academic</SelectItem>
+                  <SelectItem value="policymaker">Policy Maker / Govt. Official</SelectItem>
                   <SelectItem value="startup">Startup Founder</SelectItem>
                   <SelectItem value="investor">Investor</SelectItem>
-                  <SelectItem value="partner">Partner / Incubator</SelectItem>
-                  <SelectItem value="mentor">Mentor</SelectItem>
                   <SelectItem value="student">Student / Aspiring Entrepreneur</SelectItem>
                   <SelectItem value="other">Other</SelectItem>
                 </SelectContent>

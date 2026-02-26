@@ -18,6 +18,7 @@ const fadeUpItem: Variants = {
 const initiatives = [
   { title: "NCR Energy Research Initiative", desc: "Data-driven energy policy research launched by the Ministry of Power to steer India's sustainable ecosystem.", cta: "Explore Initiative" },
   { title: "Delhi Startup Policy 2025", desc: "Co-creating an inclusive startup ecosystem through high-level consultative roundtables and policy dialogues.", cta: "Learn More" },
+  { title: "India Europe Economic Policy Dialogue", desc: "Bridging academic research and international policy, focusing on Green Energy, AI, Semiconductors, and Trade connectivity.", cta: "Read More" },
 ];
 
 
@@ -43,11 +44,11 @@ const Index = () => {
               <span className="text-gradient">Research & Policy</span>
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl leading-relaxed">
-              Neecop bridges the gap between data-driven research and impactful policy making to build a sustainable innovation economy.
+              Neecop leads data-driven research in energy efficiency and startup policy, bridging the gap between academic insights and national development.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-base px-8" asChild>
-                <Link to="/get-involved">Get Started</Link>
+                <Link to="/initiatives">Explore Research</Link>
               </Button>
               <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent text-base px-8" asChild>
                 <Link to="/contact">Contact Us</Link>
@@ -77,10 +78,10 @@ const Index = () => {
           <div className="bg-muted rounded-2xl p-8 flex items-center justify-center min-h-[300px]">
             <div className="grid grid-cols-2 gap-6 text-center">
               {[
-                { num: "50+", label: "Policy Papers" },
-                { num: "20+", label: "Research Projects" },
-                { num: "100+", label: "Policy Advisors" },
-                { num: "30+", label: "Key Initiatives" },
+                { num: "100+", label: "Villages Surveyed" },
+                { num: "₹200Cr+", label: "Proposed VC Fund" },
+                { num: "20+", label: "Policy Roundtables" },
+                { num: "5000+", label: "Target Startups" },
               ].map((stat) => (
                 <div key={stat.label}>
                   <p className="text-3xl font-heading font-bold text-secondary">{stat.num}</p>
@@ -110,8 +111,8 @@ const Index = () => {
             <motion.div key={item.title} variants={fadeUpItem} className="bg-card rounded-xl p-8 shadow-card border border-border hover:shadow-card-hover transition-shadow">
               <h3 className="font-heading font-semibold text-foreground text-lg mb-3">{item.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-6">{item.desc}</p>
-              <Button variant="link" className="p-0 text-secondary gap-1">
-                {item.cta} <ArrowRight className="h-4 w-4" />
+              <Button variant="link" className="p-0 text-secondary gap-1" asChild>
+                <Link to="/initiatives">{item.cta} <ArrowRight className="h-4 w-4" /></Link>
               </Button>
             </motion.div>
           ))}
@@ -137,7 +138,7 @@ const Index = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-base px-8" asChild>
-                <Link to="/get-involved">Get Started</Link>
+                <Link to="/initiatives">Learn More</Link>
               </Button>
               <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent text-base px-8" asChild>
                 <Link to="/contact">Contact Us</Link>
