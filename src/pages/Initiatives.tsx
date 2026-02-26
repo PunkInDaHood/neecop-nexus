@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SectionWrapper from "@/components/SectionWrapper";
 import { LayoutDashboard, Landmark, Newspaper, ArrowRight, Zap, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -43,8 +44,8 @@ const Initiatives = () => {
                 <div>
                   <h2 className="text-2xl font-heading font-bold text-foreground mb-3">{item.title}</h2>
                   <p className="text-muted-foreground leading-relaxed mb-4">{item.desc}</p>
-                  <Button variant="link" className="p-0 text-secondary gap-1">
-                    Learn More <ArrowRight className="h-4 w-4" />
+                  <Button variant="link" className="p-0 text-secondary gap-1" asChild>
+                    <Link to="/contact">Learn More <ArrowRight className="h-4 w-4" /></Link>
                   </Button>
                 </div>
               </div>
