@@ -12,27 +12,31 @@ import News from "./pages/News";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
+import { ThemeProvider } from "./components/theme-provider";
+
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/initiatives" element={<Initiatives />} />
-            <Route path="/initiatives/:id" element={<InitiativeDetail />} />
-            <Route path="/news/:id" element={<News />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Layout>
-      </BrowserRouter>
-    </TooltipProvider>
+    <ThemeProvider defaultTheme="light" storageKey="neecop-theme">
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/initiatives" element={<Initiatives />} />
+              <Route path="/initiatives/:id" element={<InitiativeDetail />} />
+              <Route path="/news/:id" element={<News />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Layout>
+        </BrowserRouter>
+      </TooltipProvider>
+    </ThemeProvider>
   </QueryClientProvider>
 );
 

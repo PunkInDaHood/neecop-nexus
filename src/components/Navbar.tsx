@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
+import { ModeToggle } from "./mode-toggle";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -39,15 +40,19 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-2">
+          <ModeToggle />
           <Button size="sm" className="bg-secondary text-secondary-foreground hover:bg-secondary/90" asChild>
             <Link to="/contact">Contact Us</Link>
           </Button>
         </div>
 
         {/* Mobile toggle */}
-        <button className="md:hidden p-2" onClick={() => setMobileOpen(!mobileOpen)}>
-          {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
+        <div className="flex items-center gap-2 md:hidden">
+          <ModeToggle />
+          <button className="p-2" onClick={() => setMobileOpen(!mobileOpen)}>
+            {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
