@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import SectionWrapper from "@/components/SectionWrapper";
 import { Button } from "@/components/ui/button";
-import { Mail, MapPin, Linkedin, ArrowRight, ExternalLink, Copy, Check, globe } from "lucide-react";
+import { Mail, MapPin, Linkedin, ArrowRight, ExternalLink, Copy, Check } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -93,7 +93,7 @@ const Contact = () => {
                     variant="ghost"
                     size="lg"
                     onClick={handleCopy}
-                    className="h-14 px-8 text-lg gap-3 text-muted-foreground hover:text-foreground"
+                    className="h-14 px-8 text-lg gap-3 text-muted-foreground hover:text-secondary hover:bg-secondary/10 transition-colors"
                   >
                     {copied ? (
                       <>
