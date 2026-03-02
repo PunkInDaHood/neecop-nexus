@@ -1,10 +1,25 @@
 import { motion } from "framer-motion";
 import SectionWrapper from "@/components/SectionWrapper";
 import { Button } from "@/components/ui/button";
-import { Mail, MapPin, Linkedin, ArrowRight, ExternalLink } from "lucide-react";
+import { Mail, MapPin, Linkedin, ArrowRight, ExternalLink, Copy, Check } from "lucide-react";
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
   const email = "hello@neecop.com";
+  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
+  const [copied, setCopied] = useState(false);
+  const { toast } = useToast();
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(email);
+    setCopied(true);
+    toast({
+      title: "Email Copied!",
+      description: "The email address has been copied to your clipboard.",
+    });
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   return (
     <>
@@ -47,9 +62,9 @@ const Contact = () => {
                   <Mail className="h-8 w-8 text-secondary" />
                 </div>
 
-                <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">Direct Email</h2>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">Direct Communication</h2>
                 <p className="text-muted-foreground text-lg mb-10 max-w-md">
-                  Send us your inquiries, research ideas, or partnership proposals. We typically respond within 24 hours.
+                  We've streamlined our contact process. Click below to open Gmail or copy our email address.
                 </p>
 
                 <div className="flex flex-wrap gap-4">
@@ -58,15 +73,27 @@ const Contact = () => {
                     className="bg-secondary text-secondary-foreground hover:bg-secondary/90 h-14 px-8 text-lg gap-3 shadow-lg shadow-secondary/20"
                     asChild
                   >
-                    <a href={`mailto:${email}`}>
-                      Email Us Now <ArrowRight className="h-5 w-5" />
+                    <a href={gmailUrl} target="_blank" rel="noopener noreferrer">
+                      Compose in Gmail <ArrowRight className="h-5 w-5" />
                     </a>
                   </Button>
 
-                  <div className="flex items-center gap-2 text-foreground font-semibold px-4">
-                    <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                    Available Mon-Fri
-                  </div>
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    onClick={handleCopy}
+                    className="h-14 px-8 text-lg gap-3 border-secondary/30 text-foreground hover:bg-secondary/10"
+                  >
+                    {copied ? (
+                      <>
+                        Copied <Check className="h-5 w-5 text-green-500" />
+                      </>
+                    ) : (
+                      <>
+                        Copy Email <Copy className="h-5 w-5" />
+                      </>
+                    )}
+                  </Button>
                 </div>
 
                 <p className="mt-8 text-sm text-muted-foreground font-mono">
@@ -78,7 +105,7 @@ const Contact = () => {
             <div className="grid sm:grid-cols-2 gap-6">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 }}
                 className="p-6 bg-muted/30 border border-border rounded-2xl flex items-start gap-4"
