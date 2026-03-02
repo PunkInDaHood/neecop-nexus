@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import SectionWrapper from "@/components/SectionWrapper";
 import { Button } from "@/components/ui/button";
-import { Mail, MapPin, Linkedin, ArrowRight, ExternalLink, Copy, Check } from "lucide-react";
+import { Mail, MapPin, Linkedin, ArrowRight, ExternalLink, Copy, Check, globe } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -64,7 +64,7 @@ const Contact = () => {
 
                 <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">Direct Communication</h2>
                 <p className="text-muted-foreground text-lg mb-10 max-w-md">
-                  We've streamlined our contact process. Click below to open Gmail or copy our email address.
+                  We've streamlined our contact process. Use your preferred method to get in touch.
                 </p>
 
                 <div className="flex flex-wrap gap-4">
@@ -73,16 +73,27 @@ const Contact = () => {
                     className="bg-secondary text-secondary-foreground hover:bg-secondary/90 h-14 px-8 text-lg gap-3 shadow-lg shadow-secondary/20"
                     asChild
                   >
-                    <a href={gmailUrl} target="_blank" rel="noopener noreferrer">
-                      Compose in Gmail <ArrowRight className="h-5 w-5" />
+                    <a href={`mailto:${email}`}>
+                      Email Us <ArrowRight className="h-5 w-5" />
                     </a>
                   </Button>
 
                   <Button
                     variant="outline"
                     size="lg"
-                    onClick={handleCopy}
                     className="h-14 px-8 text-lg gap-3 border-secondary/30 text-foreground hover:bg-secondary/10"
+                    asChild
+                  >
+                    <a href={gmailUrl} target="_blank" rel="noopener noreferrer">
+                      Use Gmail (Web)
+                    </a>
+                  </Button>
+
+                  <Button
+                    variant="ghost"
+                    size="lg"
+                    onClick={handleCopy}
+                    className="h-14 px-8 text-lg gap-3 text-muted-foreground hover:text-foreground"
                   >
                     {copied ? (
                       <>
@@ -90,7 +101,7 @@ const Contact = () => {
                       </>
                     ) : (
                       <>
-                        Copy Email <Copy className="h-5 w-5" />
+                        Copy Address <Copy className="h-5 w-5" />
                       </>
                     )}
                   </Button>
