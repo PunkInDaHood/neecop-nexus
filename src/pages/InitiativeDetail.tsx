@@ -16,16 +16,23 @@ import rt6 from "@/assets/roundtable/WhatsApp Image 2026-02-27 at 20.00.05.jpeg"
 
 const initiativeData: Record<string, any> = {
     "ncr-energy": {
-        title: "Evaluating Domestic Power Supply in the NCR",
+        title: "Evaluating Power Supply Across the Districts of NCR",
         heroImage: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2070&auto=format&fit=crop",
         icon: Zap,
-        summary: "A visionary research initiative launched by Hon’ble Minister of Power, Shri Manohar Lal Khattar ji, marking a significant leap toward data-driven energy policy in India.",
+        summary: "A large-scale baseline assessment framework integrating household surveys, feeder-level sampling, and stakeholder consultations to support long-term power sector reform.",
         pillars: [
-            { title: "Smart Meter Efficiency", desc: "Capturing the pulse of domestic power supply across 35 districts in Delhi, Haryana, UP, and Rajasthan." },
-            { title: "P2P Energy Trading", desc: "Exploring futures where you can buy power directly from your neighbour’s rooftop solar system as easily as UPI." },
-            { title: "Decentralised Storage", desc: "Integrating battery storage systems to co-create people-centric, data-backed solutions for Viksit Bharat @2047." }
+            { title: "Supply Reliability", desc: "Analyzing outage patterns and supply consistency across diverse districts." },
+            { title: "Consumer Experience", desc: "Evaluating service delivery, billing, and digital interface adoption." },
+            { title: "Infrastructure Performance", desc: "Feeder-level sampling to assess adequacy and technical readiness." },
+            { title: "Governance Redressal", desc: "Testing institutional coordination and grievance management systems." }
         ],
-        detailedContent: "Imagine selling electricity to your friend or trading stored energy like stocks. This initiative, undertaken by Kirori Mal College, is more than research—it’s a roadmap for India’s energy future. By capturing data from 35 districts, we are advancing the green transition to unlock new markets for India’s youth.",
+        detailedContent: "In collaboration with Power Foundation of India and Kirori Mal College, Neecop is engaged in one of the most structured primary governance diagnostics at the sub-regional level. The framework covers 5,000+ household surveys and 1,200+ feeder-level samples to generate data-driven insights for Viksit Bharat @2047.",
+        stats: [
+            { label: "Household Surveys", value: "5,000+" },
+            { label: "Feeder Samples", value: "1,200+" },
+            { label: "Assembly Constituencies", value: "70" },
+            { label: "Stakeholder Interviews", value: "350+" }
+        ],
         recruitment: [
             "Research Consultants (Analytical Research)",
             "Field Investigators (On-ground Surveys)"
@@ -33,30 +40,36 @@ const initiativeData: Record<string, any> = {
         gallery: [ncr1, ncr2, ncr3, ncr4]
     },
     "delhi-startup-policy": {
-        title: "Draft Delhi Startup Policy 2025",
+        title: "Startup & Innovation Ecosystem Policy",
         heroImage: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=1706&auto=format&fit=crop",
         icon: Landmark,
-        summary: "Neecop, in collaboration with Kirori Mal College, convened a two-day Round Table Conference (8th-9th Sept 2025) to co-create a future-ready startup ecosystem.",
+        summary: "Strengthening state-level innovation architecture through structured policy analysis, reform benchmarking, and multi-stakeholder engagement.",
         pillars: [
-            { title: "Financial Incentives", desc: "Accessing ₹200Cr VC funds, subsidies, and credit support for early-stage founders." },
-            { title: "Policy Governance", desc: "Establishing robust implementation and monitoring mechanisms for transparency." },
-            { title: "Empowerment & Inclusion", desc: "Focused dialogues on enabling women, youth, and marginalized groups within the ecosystem." }
+            { title: "Regulatory Environment", desc: "Improving ease of compliance and reducing administrative bottlenecks." },
+            { title: "Incubation Support", desc: "Strengthening institutional systems for early-stage startup growth." },
+            { title: "Funding Access", desc: "Mapping capital flow structures and improving access to seed stage funding." },
+            { title: "Market Linkages", desc: "Opening procurement access and industry connections for innovators." }
         ],
-        detailedContent: "This closed-door consultative dialogue brought together founders, investors, and policy experts. The round table was not just about discussions; it was about building consensus and ensuring every participant had a voice in co-creating the ₹200-crore Startup VC Fund and stipend policies.",
-        highlights: ["Financial Incentives", "Infrastructure & Support", "Governance Mechanisms", "Awareness & Outreach"],
+        detailedContent: "Neecop contributed to the development process of the Draft Delhi Startup Policy, aligning it with DPIIT States’ Startup Ecosystem Ranking Framework. Our work ensured that policy design was informed by ground-level entrepreneurial experience and institutional capacity considerations.",
+        stats: [
+            { label: "Stakeholders Engaged", value: "200+" },
+            { label: "Reform Areas", value: "6" },
+            { label: "Action Points", value: "19" }
+        ],
         gallery: [rt1, rt2, rt3, rt4, rt5, rt6]
     },
     "india-europe-dialogue": {
-        title: "India Europe Economic Policy Dialogue",
+        title: "India–Europe Economic & Policy Dialogue",
         heroImage: "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2069&auto=format&fit=crop",
         icon: Globe,
-        summary: "A strategic research platform bridging academic insights from Kirori Mal College with international policy frameworks. We focus on enhancing bilateral trade foundations, green energy cooperation, and technological research in AI and Semiconductors.",
+        summary: "A sustained academic–policy platform fostering international engagement on economic governance, fiscal federalism, and institutional reform.",
         pillars: [
-            { title: "Trade Connectivity", desc: "Analyzing regulatory frameworks to streamline startup expansion between India and the EU." },
-            { title: "Sustainability Exchange", desc: "Collaborative research on green hydrogen and carbon-neutral industrial clusters." },
-            { title: "Tech Synergy", desc: "Bridging the gap in AI and semiconductor research through institutional partnerships." }
+            { title: "Umbrella Platform", desc: "Sustained engagement through quarterly thematic roundtables and research." },
+            { title: "Thematic Verticals", desc: "Focused series such as the Indo–German Dialogue on Fiscal Federalism." },
+            { title: "Fiscal Federalism", desc: "Exploring revenue sharing, vertical balance, and state autonomy." },
+            { title: "Cross-border Research", desc: "Facilitating co-authored research and institutional knowledge exchange." }
         ],
-        detailedContent: "The India Europe Economic Policy Dialogue addresses the growing need for evidence-based cooperation in an increasingly interconnected world. By focusing on critical sectors like AI and green energy, Neecop provides the research bedrock for dialogues that strengthen both economic ties and technological resilience between the two regions."
+        detailedContent: "Launched in collaboration with Kirori Mal College and Hanns Seidel Foundation, this Dialogue strengthens economic cooperation through scholarly depth and policy relevance. It connects global policy debates with Indian governance priorities in areas like public finance and intergovernmental coordination."
     }
 };
 
@@ -113,6 +126,17 @@ const InitiativeDetail = () => {
                         <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                             {data.detailedContent}
                         </p>
+
+                        {data.stats && (
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+                                {data.stats.map((stat: any) => (
+                                    <div key={stat.label} className="p-4 bg-muted/50 rounded-xl border border-border text-center">
+                                        <div className="text-2xl font-bold text-secondary mb-1">{stat.value}</div>
+                                        <div className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">{stat.label}</div>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
 
                         {data.recruitment && (
                             <div className="mt-12 p-8 bg-secondary/5 border border-secondary/20 rounded-2xl">

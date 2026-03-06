@@ -29,13 +29,46 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-heading font-semibold mb-4 text-sm uppercase tracking-wider text-primary-foreground/50">Quick Links</h4>
+            <h4 className="font-heading font-semibold mb-4 text-sm uppercase tracking-wider text-primary-foreground/50">Company</h4>
             <div className="flex flex-col gap-2">
               {[
                 { label: "Home", to: "/" },
-                { label: "About Us", to: "/about" },
-                { label: "Initiatives", to: "/initiatives" },
+                { label: "Our Story", to: "/about" },
+                { label: "Our Team", to: "/team" },
+                { label: "Partners", to: "/partners" },
                 { label: "Contact", to: "/contact" },
+              ].map((link) => (
+                <Link key={link.to} to={link.to} className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Impact */}
+          <div>
+            <h4 className="font-heading font-semibold mb-4 text-sm uppercase tracking-wider text-primary-foreground/50">Impact</h4>
+            <div className="flex flex-col gap-2">
+              {[
+                { label: "Initiatives", to: "/initiatives" },
+                { label: "Work In Numbers", to: "/work-in-numbers" },
+                { label: "Research", to: "/research" },
+                { label: "Platforms", to: "/platforms" },
+              ].map((link) => (
+                <Link key={link.to} to={link.to} className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Outreach */}
+          <div>
+            <h4 className="font-heading font-semibold mb-4 text-sm uppercase tracking-wider text-primary-foreground/50">Outreach</h4>
+            <div className="flex flex-col gap-2">
+              {[
+                { label: "Events", to: "/events" },
+                { label: "Media", to: "/media" },
               ].map((link) => (
                 <Link key={link.to} to={link.to} className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                   {link.label}

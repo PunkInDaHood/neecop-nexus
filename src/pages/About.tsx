@@ -15,14 +15,41 @@ const About = () => {
       </section>
 
       <SectionWrapper>
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-heading font-bold text-foreground mb-6">Who We Are</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">
-            Neecop is a research-driven organization based in New Delhi. Through our flagship NCR Energy Research Initiative, we analyze household power usage patterns across 100+ villages to steer India's sustainable development.
+          <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+            Neecop Consultants Pvt. Ltd. is a hybrid policy–strategy institution operating at the intersection of governance reform,
+            policy research, and international economic dialogue.
           </p>
-          <p className="text-muted-foreground leading-relaxed">
-            Our work focuses on smart meter effectiveness, decentralized renewable energy, and grid stabilization. By bridging the gap between academic research and government policy, we provide the data needed for evidence-based economic and environmental growth.
+          <p className="text-muted-foreground leading-relaxed mb-8">
+            We combine academic research rigor with large-scale field survey execution capability and institutional strategy advisory to support evidence-based decision-making across public systems and emerging sectors.
+            Currently operating across Delhi–NCR and expanding toward pan-India engagements, Neecop builds structured platforms that translate research into reform.
           </p>
+
+          <h3 className="text-2xl font-heading font-bold text-foreground mb-6">Our Strategic Domains</h3>
+          <div className="grid sm:grid-cols-3 gap-6 mb-12">
+            {[
+              { title: "Governance & Infrastructure Policy", desc: "District-level diagnostics, regulatory assessments, and large-scale primary field research." },
+              { title: "Startup & Innovation Ecosystem Policy", desc: "State-level startup ecosystem analysis, reform benchmarking, and consultation frameworks." },
+              { title: "International Economic & Policy Dialogue", desc: "Structured academic–policy platforms for comparative research and international engagement." }
+            ].map((domain, idx) => (
+              <div key={idx} className="p-6 bg-card rounded-xl border border-border shadow-sm">
+                <h4 className="font-heading font-bold text-secondary mb-3">{domain.title}</h4>
+                <p className="text-sm text-muted-foreground">{domain.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <h3 className="text-2xl font-heading font-bold text-foreground mb-6">Our Approach</h3>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 p-8 bg-secondary/5 rounded-2xl border border-secondary/20 font-heading font-bold text-secondary uppercase tracking-wider text-sm md:text-base">
+            <span>Field Evidence</span>
+            <span className="text-muted-foreground">→</span>
+            <span>Institutional Consultation</span>
+            <span className="text-muted-foreground">→</span>
+            <span>Policy Structuring</span>
+            <span className="text-muted-foreground">→</span>
+            <span>Reform Roadmapping</span>
+          </div>
         </div>
       </SectionWrapper>
 
