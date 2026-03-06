@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import SectionWrapper from "@/components/SectionWrapper";
 import { FileText, Download, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const researchItems = [
     {
@@ -72,9 +74,11 @@ const Research = () => {
                                 </div>
                             </div>
                             <div className="flex gap-3">
-                                <button className="flex items-center gap-2 px-6 py-3 rounded-xl bg-secondary text-secondary-foreground font-bold hover:bg-secondary/90 transition-all">
-                                    Access <ArrowRight className="h-4 w-4" />
-                                </button>
+                                <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 h-12 px-6 gap-2" asChild>
+                                    <Link to="/contact">
+                                        Access <ArrowRight className="h-4 w-4" />
+                                    </Link>
+                                </Button>
                             </div>
                         </motion.div>
                     ))}

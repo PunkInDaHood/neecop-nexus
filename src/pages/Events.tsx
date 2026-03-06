@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import SectionWrapper from "@/components/SectionWrapper";
 import { Calendar, MapPin, Users, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const events = [
     {
@@ -78,9 +79,9 @@ const Events = () => {
                                 <p className="text-muted-foreground leading-relaxed mb-8">
                                     {event.description}
                                 </p>
-                                <button className="flex items-center gap-2 text-secondary font-bold hover:gap-3 transition-all">
+                                <Link to="/media" className="flex items-center gap-2 text-secondary font-bold hover:gap-3 transition-all">
                                     View Gallery <ExternalLink className="h-4 w-4" />
-                                </button>
+                                </Link>
                             </div>
                         </motion.div>
                     ))}

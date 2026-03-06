@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import SectionWrapper from "@/components/SectionWrapper";
 import { User, Linkedin } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const Team = () => {
     return (
@@ -55,9 +57,12 @@ const Team = () => {
                     className="mt-24 p-12 border-2 border-dashed border-border rounded-3xl text-center"
                 >
                     <h3 className="text-xl font-heading font-bold text-foreground mb-3 italic">Join Our Mission</h3>
-                    <p className="text-muted-foreground max-w-lg mx-auto">
+                    <p className="text-muted-foreground max-w-lg mx-auto mb-8">
                         We are constantly looking for Research Consultants and Field Investigators to join our expanding Pan-India engagements.
                     </p>
+                    <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 h-12 px-8 rounded-xl font-bold" asChild>
+                        <Link to="/contact">Contact Us to Apply</Link>
+                    </Button>
                 </motion.div>
             </SectionWrapper>
         </div>
