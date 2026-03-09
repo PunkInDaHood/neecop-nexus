@@ -56,7 +56,23 @@ const initiativeData: Record<string, any> = {
             { label: "Reform Areas", value: "6" },
             { label: "Action Points", value: "19" }
         ],
-        gallery: [rt1, rt2, rt3, rt4, rt5, rt6]
+        gallery: [
+            { src: "/assets/media/delhi-startup-roundtable/20250906_094948.jpg", caption: "Roundtable Meeting" },
+            { src: "/assets/media/delhi-startup-roundtable/IMG-20250909-WA0025.jpg", caption: "Roundtable Meeting" },
+            { src: "/assets/media/delhi-startup-roundtable/IMG-20250909-WA0028.jpg", caption: "Roundtable Meeting" },
+            { src: "/assets/media/delhi-startup-roundtable/IMG-20250909-WA0040.jpg", caption: "Roundtable Meeting" },
+            { src: "/assets/media/delhi-startup-roundtable/IMG-20250909-WA0041.jpg", caption: "Roundtable Meeting" },
+            { src: "/assets/media/delhi-startup-roundtable/IMG-20250909-WA0042.jpg", caption: "Roundtable Meeting" },
+            { src: "/assets/media/delhi-startup-roundtable/IMG-20250909-WA0045.jpg", caption: "Roundtable Meeting" },
+            { src: "/assets/media/delhi-startup-roundtable/IMG-20250909-WA0046.jpg", caption: "Roundtable Meeting" },
+            { src: "/assets/media/delhi-startup-roundtable/IMG-20250909-WA0048.jpg", caption: "Roundtable Meeting" },
+            { src: "/assets/media/delhi-startup-roundtable/IMG-20250909-WA0051.jpg", caption: "Roundtable Meeting" },
+            { src: "/assets/media/delhi-startup-roundtable/IMG-20250910-WA0018.jpg", caption: "Roundtable Meeting" },
+            { src: "/assets/media/delhi-startup-roundtable/IMG-20250910-WA0025.jpg", caption: "Roundtable Meeting" },
+            { src: "/assets/media/delhi-startup-roundtable/IMG-20250910-WA0053.jpg", caption: "Roundtable Meeting" },
+            { src: "/assets/media/delhi-startup-roundtable/IMG-20250911-WA0028.jpg", caption: "Roundtable Meeting" },
+            rt1, rt2, rt3, rt4, rt5, rt6
+        ]
     },
     "india-europe-dialogue": {
         title: "India–Europe Economic & Policy Dialogue",
@@ -228,12 +244,14 @@ const InitiativeDetail = () => {
                                     className="group relative aspect-video overflow-hidden rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl transition-all duration-500"
                                 >
                                     <img
-                                        src={img}
+                                        src={typeof img === 'string' ? img : img.src}
                                         alt={`${data.title} Gallery ${idx + 1}`}
                                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                                        <p className="text-white text-sm font-medium">Research Milestone View {idx + 1}</p>
+                                        <p className="text-white text-sm font-medium">
+                                            {typeof img === 'string' ? `Research Milestone View ${idx + 1}` : img.caption}
+                                        </p>
                                     </div>
                                 </motion.div>
                             ))}
