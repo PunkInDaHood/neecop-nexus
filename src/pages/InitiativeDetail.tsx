@@ -57,23 +57,7 @@ const initiativeData: Record<string, any> = {
             { label: "Reform Areas", value: "6" },
             { label: "Action Points", value: "19" }
         ],
-        gallery: [
-            { src: "/assets/media/delhi-startup-roundtable/20250906_094948.jpg", caption: "Roundtable Meeting" },
-            { src: "/assets/media/delhi-startup-roundtable/IMG-20250909-WA0025.jpg", caption: "Roundtable Meeting" },
-            { src: "/assets/media/delhi-startup-roundtable/IMG-20250909-WA0028.jpg", caption: "Roundtable Meeting" },
-            { src: "/assets/media/delhi-startup-roundtable/IMG-20250909-WA0040.jpg", caption: "Roundtable Meeting" },
-            { src: "/assets/media/delhi-startup-roundtable/IMG-20250909-WA0041.jpg", caption: "Roundtable Meeting" },
-            { src: "/assets/media/delhi-startup-roundtable/IMG-20250909-WA0042.jpg", caption: "Roundtable Meeting" },
-            { src: "/assets/media/delhi-startup-roundtable/IMG-20250909-WA0045.jpg", caption: "Roundtable Meeting" },
-            { src: "/assets/media/delhi-startup-roundtable/IMG-20250909-WA0046.jpg", caption: "Roundtable Meeting" },
-            { src: "/assets/media/delhi-startup-roundtable/IMG-20250909-WA0048.jpg", caption: "Roundtable Meeting" },
-            { src: "/assets/media/delhi-startup-roundtable/IMG-20250909-WA0051.jpg", caption: "Roundtable Meeting" },
-            { src: "/assets/media/delhi-startup-roundtable/IMG-20250910-WA0018.jpg", caption: "Roundtable Meeting" },
-            { src: "/assets/media/delhi-startup-roundtable/IMG-20250910-WA0025.jpg", caption: "Roundtable Meeting" },
-            { src: "/assets/media/delhi-startup-roundtable/IMG-20250910-WA0053.jpg", caption: "Roundtable Meeting" },
-            { src: "/assets/media/delhi-startup-roundtable/IMG-20250911-WA0028.jpg", caption: "Roundtable Meeting" },
-            rt1, rt2, rt3, rt4, rt5, rt6
-        ]
+        galleryLink: "/media?category=Startup+Summit"
     },
     "india-europe-dialogue": {
         title: "India–Europe Economic & Policy Dialogue",
@@ -258,6 +242,16 @@ const InitiativeDetail = () => {
                             ))}
                         </div>
                     </div>
+                </section>
+            )}
+
+            {data.galleryLink && (
+                <section className="pb-24 pt-12 text-center bg-background">
+                    <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-10 h-14 rounded-full font-bold shadow-xl shadow-secondary/20 transition-all scale-100 hover:scale-105" asChild>
+                        <Link to={data.galleryLink}>
+                            <ImageIcon className="h-5 w-5 mr-3" /> View Gallery
+                        </Link>
+                    </Button>
                 </section>
             )}
         </div>
