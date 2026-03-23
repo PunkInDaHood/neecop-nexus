@@ -10,10 +10,8 @@ const mediaCategories = [
     "All",
     "Field Work",
     "Energy",
-    "International Dialogue 2026",
     "Startup Summit",
     "Policy Roundtables",
-    "International Dialogues",
     "Global Dialogues"
 ];
 const mediaData = [
@@ -162,65 +160,6 @@ const mediaData = [
         title: "India-Europe Dialogue",
         image: "/assets/media/international-dialogues/India-Europe Economic & Policy Dialogue (1).png"
     },
-    {
-        id: 23,
-        category: "Policy Roundtables",
-        title: "Delhi Startup Roundtable 4",
-        image: "/assets/media/delhi-startup-roundtable/IMG-20250909-WA0040.jpg"
-    },
-    {
-        id: 26,
-        category: "Policy Roundtables",
-        title: "Delhi Startup Roundtable 7",
-        image: "/assets/media/delhi-startup-roundtable/IMG-20250909-WA0045.jpg"
-    },
-    {
-        id: 34,
-        category: "Policy Roundtables",
-        title: "Roundtable Engagement 1",
-        image: "/assets/media/general-roundtables/FB_IMG_1772562708340.jpg.jpeg"
-    },
-    {
-        id: 35,
-        category: "Policy Roundtables",
-        title: "Roundtable Engagement 2",
-        image: "/assets/media/general-roundtables/FB_IMG_1772562711614.jpg.jpeg"
-    },
-    {
-        id: 36,
-        category: "Policy Roundtables",
-        title: "Roundtable Engagement 3",
-        image: "/assets/media/general-roundtables/FB_IMG_1772562714475.jpg.jpeg"
-    },
-    {
-        id: 37,
-        category: "Policy Roundtables",
-        title: "Roundtable Engagement 4",
-        image: "/assets/media/general-roundtables/FB_IMG_1772562717622.jpg.jpeg"
-    },
-    {
-        id: 38,
-        category: "Policy Roundtables",
-        title: "Roundtable Engagement 5",
-        image: "/assets/media/general-roundtables/FB_IMG_1772562721221.jpg.jpeg"
-    },
-    {
-        id: 39,
-        category: "Policy Roundtables",
-        title: "Roundtable Engagement 6",
-        image: "/assets/media/general-roundtables/IMG-20250725-WA0029.jpg.jpeg"
-    },
-    // Roundtable Photos
-    { id: 401, category: "Policy Roundtables", title: "Strategic Roundtable", image: "/assets/media/roundtable/roundtable-1.jpg" },
-    { id: 402, category: "Policy Roundtables", title: "Policy Consultation", image: "/assets/media/roundtable/roundtable-2.jpg" },
-    { id: 403, category: "Policy Roundtables", title: "Institutional Dialogue", image: "/assets/media/roundtable/roundtable-3.jpg" },
-    { id: 404, category: "Policy Roundtables", title: "Ecosystem Strategy", image: "/assets/media/roundtable/roundtable-4.jpg" },
-    { id: 405, category: "Policy Roundtables", title: "Governance Review", image: "/assets/media/roundtable/roundtable-5.jpg" },
-    { id: 406, category: "Policy Roundtables", title: "Research Deliberation", image: "/assets/media/roundtable/roundtable-6.jpg" },
-    { id: 407, category: "Policy Roundtables", title: "Stakeholder Engagement", image: "/assets/media/roundtable/roundtable-7.jpg" },
-    { id: 408, category: "Policy Roundtables", title: "Policy Roadmap", image: "/assets/media/roundtable/roundtable-8.jpg" },
-    { id: 409, category: "Policy Roundtables", title: "Strategic Framework", image: "/assets/media/roundtable/roundtable-9.jpg" },
-    { id: 410, category: "Policy Roundtables", title: "Institutional Roundtable", image: "/assets/media/roundtable/roundtable-10.jpg" },
 
     // Global Dialogues
     { id: 601, category: "Global Dialogues", title: "Global Dialogue 1", image: "/assets/media/global-dialogues/global-dialogue-1.jpg" },
@@ -282,7 +221,16 @@ const Media = () => {
                     </motion.div>
                 </div>
             </section>
-
+// Policy Roundtables photos
+{ id: 401, category: "Policy Roundtables", title: "Roundtable 1", image: "/assets/media/policy-roundtables/roundtable-1.jpg" },
+{ id: 402, category: "Policy Roundtables", title: "Roundtable 2", image: "/assets/media/policy-roundtables/roundtable-2.jpg" },
+{ id: 403, category: "Policy Roundtables", title: "Roundtable 3", image: "/assets/media/policy-roundtables/roundtable-3.jpg" },
+{ id: 404, category: "Policy Roundtables", title: "Roundtable 4", image: "/assets/media/policy-roundtables/roundtable-4.jpg" },
+{ id: 405, category: "Policy Roundtables", title: "Roundtable 5", image: "/assets/media/policy-roundtables/roundtable-5.jpg" },
+{ id: 406, category: "Policy Roundtables", title: "Roundtable 6", image: "/assets/media/policy-roundtables/roundtable-6.jpg" },
+{ id: 407, category: "Policy Roundtables", title: "Roundtable 7", image: "/assets/media/policy-roundtables/roundtable-7.jpg" },
+{ id: 408, category: "Policy Roundtables", title: "Roundtable 8", image: "/assets/media/policy-roundtables/roundtable-8.jpg" },
+// Global Dialogues
             <SectionWrapper>
                 <div className="flex flex-wrap gap-3 mb-16 justify-center">
                     {mediaCategories.map((cat) => (
