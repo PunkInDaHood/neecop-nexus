@@ -70,7 +70,8 @@ const initiativeData: Record<string, any> = {
             { title: "Fiscal Federalism", desc: "Exploring revenue sharing, vertical balance, and state autonomy." },
             { title: "Cross-border Research", desc: "Facilitating co-authored research and institutional knowledge exchange." }
         ],
-        detailedContent: <>Launched in collaboration with Kirori Mal College and Hanns Seidel Foundation, this <Highlight>Dialogue</Highlight> strengthens economic <Highlight>cooperation</Highlight> through scholarly depth and <Highlight>policy relevance</Highlight>. It connects global policy debates with Indian <Highlight>governance</Highlight> priorities in areas like public finance and intergovernmental coordination.</>
+        detailedContent: <>Launched in collaboration with Kirori Mal College and Hanns Seidel Foundation, this <Highlight>Dialogue</Highlight> strengthens economic <Highlight>cooperation</Highlight> through scholarly depth and <Highlight>policy relevance</Highlight>. It connects global policy debates with Indian <Highlight>governance</Highlight> priorities in areas like public finance and intergovernmental coordination.</>,
+        galleryLink: "/media?category=Global+Dialogues"
     }
 };
 
