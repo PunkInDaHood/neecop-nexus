@@ -85,7 +85,7 @@ const Events = () => {
                                     to={`/media?category=${(
                                         event.title === "Power Supply Project Launch" ? "Energy+%26+Power+2026" :
                                         event.title === "Delhi Startup Summit" ? "Startup+Summit" :
-                                        event.title === "India–Europe Economic Dialogue" ? "International+Dialogue+2026" :
+                                        event.title === "India–Europe Economic Dialogue" ? "Global+Dialogues" :
                                         "Policy+Roundtables"
                                     )}`} 
                                     className="flex items-center gap-2 text-secondary font-bold hover:gap-3 transition-all"
