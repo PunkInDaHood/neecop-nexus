@@ -83,7 +83,7 @@ const Events = () => {
                                 </p>
                                 <Link 
                                     to={`/media?category=${(
-                                        event.title === "Power Supply Project Launch" ? "Energy+%26+Power+2026" :
+                                        event.title === "Power Supply Project Launch" ? "Energy" :
                                         event.title === "Delhi Startup Summit" ? "Startup+Summit" :
                                         event.title === "India–Europe Economic Dialogue" ? "Global+Dialogues" :
                                         "Policy+Roundtables"
