@@ -34,7 +34,7 @@ const Footer = () => {
               {[
                 { label: "Home", to: "/" },
                 { label: "Our Story", to: "/about" },
-                { label: "Institutional Collaboration", to: "/partners" },
+                { label: "Institutional Engagement", to: "/partners" },
                 { label: "Contact", to: "/contact" },
               ].map((link) => (
                 <Link key={link.to} to={link.to} className="text-sm text-white/70 hover:text-white transition-colors">

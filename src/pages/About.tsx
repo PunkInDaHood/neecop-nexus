@@ -26,7 +26,7 @@ const About = () => {
             Strengthening India's <Highlight>Governance</Highlight>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-            Neecop Consultants Pvt. Ltd. is a hybrid policy–strategy institution operating at the intersection of <Highlight>governance</Highlight> reform,
+            Neecop Consultants is a hybrid policy–strategy institution operating at the intersection of <Highlight>governance</Highlight> reform,{" "}
             <Highlight>policy research</Highlight>, and international <Highlight>economic dialogue</Highlight>.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-8">
@@ -43,19 +43,19 @@ const About = () => {
                 category: "Policy Roundtables"
               },
               {
-                title: "Startup & Innovation Ecosystem Policy", 
+                title: "Startup & Innovation Ecosystem Policy",
                 desc: "State-level startup ecosystem analysis, reform benchmarking, and consultation frameworks.",
                 category: "Startup Summit"
               },
-              { 
-                title: "International Economic & Policy Dialogue", 
+              {
+                title: "International Economic & Policy Dialogue",
                 desc: "Structured academic–policy platforms for comparative research and international engagement.",
                 category: "Global Dialogues"
               }
             ].map((domain, idx) => (
-              <Link 
+              <Link
                 to={`/media?category=${encodeURIComponent(domain.category)}`}
-                key={idx} 
+                key={idx}
                 className="premium-card p-6 bg-card rounded-xl border border-border shadow-sm group"
               >
                 <h4 className="font-heading font-bold text-secondary mb-3 group-hover:text-primary transition-colors">{domain.title}</h4>

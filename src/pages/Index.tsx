@@ -46,7 +46,7 @@ const Index = () => {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-black">
+      <section className="relative min-h-[90vh] pt-[50vh] pb-16 md:pb-20 overflow-hidden bg-black flex flex-col items-center">
         <div className="absolute inset-0">
           <AnimatePresence>
             <motion.div
@@ -55,7 +55,7 @@ const Index = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 1.5, ease: "easeInOut" }}
-              className="absolute inset-0"
+              className="absolute inset-0 transition-opacity"
             >
               <img 
                 src={slideshowImages[currentSlide]} 
@@ -64,29 +64,29 @@ const Index = () => {
               />
             </motion.div>
           </AnimatePresence>
-          <div className="absolute inset-0 bg-gradient-to-b from-navy/30 via-transparent to-navy/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
         </div>
         
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 relative z-10 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-4xl mx-auto text-center"
           >
-            <motion.div 
+          <motion.div 
               initial={{ scaleX: 0 }}
               animate={{ scaleX: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="w-24 h-1 bg-secondary mx-auto mb-8 origin-center"
+              className="w-24 h-1 bg-secondary mx-auto mb-4 origin-center"
             />
             
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-[1.1] mb-8 tracking-tight uppercase">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-[1.1] mb-4 tracking-tight uppercase">
               From <span className="text-secondary italic">Field</span> <br />
               to <Highlight>Framework</Highlight>
             </h1>
             
-            <p className="text-lg md:text-2xl text-white/80 mb-10 max-w-3xl mx-auto leading-relaxed font-light">
+            <p className="text-lg md:text-2xl text-white/80 mb-4 max-w-3xl mx-auto leading-relaxed font-light">
               Bridging academic rigor with strategic insights to empower India's energy efficiency and startup ecosystem.
             </p>
             
@@ -151,7 +151,7 @@ const Index = () => {
             <div className="grid grid-cols-2 gap-6 text-center">
               {[
                 { num: "250+", label: "villages/wards surveyed" },
-                { num: "₹200Cr+", label: "Proposed VC Fund" },
+                { num: "5,000+", label: "stakeholders consulted" },
               ].map((stat) => (
                 <div key={stat.label}>
                   <p className="text-3xl font-heading font-bold text-secondary">{stat.num}</p>

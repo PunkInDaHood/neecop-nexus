@@ -17,7 +17,7 @@ const navLinks = [
     label: "About",
     children: [
       { label: "Our Story", to: "/about" },
-      { label: "Institutional Collaboration", to: "/partners" },
+      { label: "Institutional Engagement", to: "/partners" },
     ]
   },
   {

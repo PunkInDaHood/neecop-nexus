@@ -14,7 +14,7 @@ const stats = [
     },
     {
         icon: Users,
-        value: "10,000+",
+        value: "200+",
         label: "Stakeholders Engaged",
         detail: "Deep engagement across policy consultations, industry roundtables, and academic forums.",
         color: "text-secondary",

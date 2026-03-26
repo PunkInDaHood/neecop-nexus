@@ -57,7 +57,7 @@ const Partners = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <div className="w-12 h-1 bg-secondary mb-6" />
-                        <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6 tracking-tight">Institutional Collaboration</h1>
+                        <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6 tracking-tight">Institutional Engagement</h1>
                         <p className="text-white/80 max-w-2xl text-lg leading-relaxed font-light">
                             Partnering with leading academic, governmental, and international institutions to drive evidence-based policy reform.
                         </p>
@@ -84,7 +84,6 @@ const Partners = () => {
                                 )}
                             </div>
                             <div>
-                                <span className="text-xs font-bold text-secondary uppercase tracking-widest mb-2 block">{partner.type}</span>
                                 <h2 className="text-2xl font-heading font-bold mb-2">{partner.name}</h2>
                                 <div className="text-sm font-medium text-muted-foreground mb-4">{partner.detail}</div>
                                 <p className="text-muted-foreground leading-relaxed">
