@@ -27,7 +27,6 @@ const slideshowImages = [
   "/assets/media/hero-slideshow/slide-2.jpg",
   "/assets/media/hero-slideshow/slide-3.jpg",
   "/assets/media/hero-slideshow/slide-4.jpg",
-  "/assets/media/hero-slideshow/slide-5.jpg",
   "/assets/media/hero-slideshow/slide-6.jpg",
   "/assets/media/hero-slideshow/slide-7.jpg",
 ];
